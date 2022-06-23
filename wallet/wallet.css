@@ -1,0 +1,421 @@
+.wallet-header{
+    background-color: rgb(18, 29, 51);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1.2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.wallet-header ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.wallet-header ul li{
+    color: rgb(223, 227, 235);
+    margin: 0 1.7rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.wallet-landing-container{
+    background-color:rgb(18, 29, 51);
+}
+.wallet-landing{
+    background-image: url('../images/wallet-hero-gradient.svg');
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    color: rgba(255, 255, 255);
+    padding: 5rem 2rem 13rem 9rem;
+    margin-bottom: 0;
+    display: flex;
+    position: relative;
+}
+
+.wallet-landing h2{
+    margin: 0;
+    font-size: 3rem;
+}
+
+.wallet-landing p{
+    font-size: 1.5rem;
+    margin: 3rem 0;
+    font-weight: 500;
+}
+
+.landing-content button:nth-of-type(1) {
+    background-color: rgba(255, 255, 255);
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.2rem;
+}
+
+.landing-content button:nth-of-type(2){
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(255, 255, 255);
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255);
+    font-size: 1.2rem;
+    margin: 0 1.5rem
+}
+
+.landing-image{
+    width: 50%;
+    flex-shrink: 0;
+}
+
+.wallet-landing img{
+    height: auto;
+    width: 450px;
+    position: absolute;
+    right: 9rem;
+    top: 2.5rem;
+}
+
+.wallet-page-one{
+    display: flex;
+    margin-top: 10rem;
+    background-image: url('../images/wallet-buy-shapes.png');
+    background-size: 45%;
+    background-position: left;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.page-one__image{
+    width: 80%;
+    margin-top: 5rem;
+}
+
+.page-one__image img{ 
+    position: absolute;
+    width: 450px;
+    height: auto;
+    top: -10rem;
+    left: 5rem;
+}
+
+.page-one__content{
+    width: 65%;
+    margin: 3rem 7rem 10rem 0;
+}
+
+.page-one__content h2{
+    font-size: 2.5rem;
+    color: rgb(18, 29, 51);
+}
+
+.page-one__content p{
+    color: rgb(80, 89, 107);
+    font-size: 1.2rem;
+}
+
+
+.wallet-page-two{
+    display: flex;
+    margin-top: 10rem;
+}
+
+.page-two__image{
+    width: 80%;
+    margin-top: 5rem;
+}
+
+ .page-two__image img{ 
+    position: absolute;
+    width: 350px;
+    height: auto;
+}
+
+.page-two__content{
+    width: 65%;
+    margin: 3rem 7rem 10rem 7rem;
+}
+
+.page-two__content h2{
+    font-size: 2.5rem;
+    color: rgb(18, 29, 51);
+}
+
+.page-two__content p{
+    color: rgb(80, 89, 107);
+    font-size: 1.2rem;
+}
+
+.learn-more{
+    display: flex;
+    align-items: center;
+    color: rgb(18, 29, 51);
+    font-weight: 500;
+}
+
+.learn-more  p{
+    color:rgb(18, 29, 51);
+}
+
+.learn-more:hover{
+    color:rgb(12, 108, 242);
+}
+
+.learn-more:hover > p{
+    color:rgb(12, 108, 242);
+}
+.learn-more p{
+    padding-right: 0.5rem
+}
+
+.wallet-security{
+    background-color: rgba(239, 236, 254, 0.5);
+}
+
+.security-intro__container{
+    background-image: url('../images/wallet-keys-bg.svg');
+    background-repeat: none;
+    background-size: cover;
+    padding-bottom: 12rem;
+}
+
+.security-intro{
+    padding-top: 9rem;
+    width: 38%;
+    margin: auto;
+    text-align: center;
+}
+
+.security-intro div{
+    background-color: rgb(239, 236, 254);
+    display: inline-block;
+    padding: 0.9rem;
+    border-radius: 20px;
+    color: rgb(115, 73, 242);
+}
+
+.security-intro h2{
+    color:rgb(18, 29, 51);
+    font-size: 2.5rem;
+}
+
+.security-intro p{
+    color:rgb(80, 89, 107);
+    font-size: 1.15rem;
+    line-height: 1.5;
+}
+
+.security-intro button{
+    color: rgba(255, 255, 255);
+    background-color: rgb(115, 73, 242);
+    padding: 1rem 1.5rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+.crypto-assets{
+    position: relative;
+    height: 12rem;
+}
+
+.crypto-assets h3{
+    font-size: 2rem;
+    color: rgb(18, 29, 51);
+    text-align: center;
+}
+
+.coin-boards{
+    width: 78%;
+    position: absolute;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 25px;
+    top: 6rem;
+    left: 0;
+    right: 0;
+}
+
+.coin-board{
+    box-shadow: rgb(103 113 133 / 20%) 0.75rem 1.5rem 4rem 0rem;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255);
+    padding: 0.6rem 1rem;
+}
+
+.coin-board__top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.market{
+    display: flex;
+    align-items: center;
+}
+
+.market p:nth-of-type(1){
+    background-color: rgb(239, 236, 254);
+    color: rgb(83, 34, 229);
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-right: 0.5rem;
+    padding: 0.3rem;
+    border-radius: 5px;
+}
+
+.market p:nth-of-type(2){
+    background-color: rgb(230, 250, 236);
+    color: rgb(0, 153, 76);
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0.3rem;
+    border-radius: 5px;
+}
+
+.coin-board__bottom{
+    color: rgb(18, 29, 51);
+    font-weight: 500;
+}
+
+.abbrev{
+    color: rgb(103, 113, 133);
+    margin-left: 0.5rem;
+}
+
+.gains{
+    color:rgb(243, 17, 17);
+}
+
+
+.finger-print{
+    display: inline-block;
+    background-color: rgb(239, 236, 254);
+    padding: 0.75rem;
+    color: rgb(115, 73, 242);
+    border-radius: 20px;
+}
+
+.best-security__container{
+    background: linear-gradient(rgba(240, 242, 247, 0) 0%, rgba(240, 242, 247, 0.2) 100%);
+    border-bottom: 1px solid rgb(240, 242, 247);
+    margin-top: 35rem;
+}
+.best-security{
+    width: 82%;
+    margin: auto;
+}
+
+.best-security__content-box{
+    display: flex;
+}
+
+.best-security__content{
+    width: 80%;
+}
+
+.best-security__content h2{
+    font-size: 2.5rem;
+    color:rgb(18, 29, 51);
+}
+
+.best-security__content > p{
+    color:rgb(80, 89, 107);
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+.best-security__image{
+    width: 80%;
+    margin: 0 auto;
+}
+.best-security__image img{
+    width: 450px;
+    height: auto;
+}
+
+.crypto-access__container{
+    width: 82%;
+    margin: auto;
+}
+
+.crypto-access{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10rem;
+}
+
+.crypto-access > div{
+    width: 80%;
+    padding: 0 1rem;
+}
+
+.crypto-access > div > svg{
+    color: rgb(115, 73, 242);
+}
+
+.crypto-access > div p:first-of-type{
+    color: rgb(18, 29, 51);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.crypto-access > div p:last-of-type{
+    color:rgb(80, 89, 107);
+    line-height: 1.5;
+}
+
+.access-link a{
+    text-decoration: none;
+    padding-right: 0.5rem;
+    color: rgb(18, 29, 51);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.access-link svg{
+    color: rgb(18, 29, 51);
+}
+
+.access-link{
+    display: flex;
+    align-items: center;
+    color: rgb(18, 29, 51);
+}
+
+.banner-container{
+    background-image: url('../images/banner-bg-purple.svg');
+    background-color: rgb(55, 23, 153);
+}
+
+.banner{
+    width: 80%;
+    margin: 5rem auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.banner h2{
+    font-size: 2.5rem;
+    padding: 3rem 0;
+    margin-right: 2rem;
+    color: rgb(255, 255, 255);
+}
+
+.banner button{
+    color: rgb(37, 11, 115);
+    background-color: rgb(222, 216, 253);
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.banner button:hover{
+    background-color: rgb(198, 187, 252);
+}

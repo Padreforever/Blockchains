@@ -1,0 +1,400 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.custom-link{
+    width: 100%;
+    background:linear-gradient(to right, rgb(9, 86, 191), rgb(4, 64, 143), rgb(2, 54, 120), rgb(4, 64, 143), rgb(9, 86, 191));
+    color: #fff;
+    text-align: center;
+    padding: 12px 0;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.custom-link:hover{
+    background: rgb(0, 42, 92);
+}
+
+.custom-link a{
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+}
+header{
+    background-color: rgb(18, 29, 51);
+    border-bottom: 0.5px solid rgb(66, 68, 75);
+}
+
+.header-container{
+    padding: 50px 0 5px 0;
+    margin: auto;
+    width:95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.header-left{
+    display: flex;
+    align-items: center;
+}
+
+.logo svg,
+.access-svg svg{
+    color: #fff;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    margin: 10px;
+}
+
+nav ul li{
+    padding: 5px 15px;
+}
+
+nav ul li:hover{
+    background-color: rgb(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+nav ul li:hover a{
+    color: #fff;
+    
+}
+
+nav ul li a{
+    color: rgb(204, 210, 222);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.access{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.access-svg{
+    background: rgba(255, 255, 255, 0.1);
+    padding: 13px;
+    border-radius: 50%;
+    vertical-align: center;
+}
+
+.access .button{
+    padding: 10px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    text-decoration: none;
+    vertical-align: center;
+}
+.login{
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0);
+    margin: 0 20px;
+}
+
+.sign-up{
+    color: #121d33;
+    background-color: #fff;
+}
+
+/* floating icon */
+
+.sticker{
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    width: 360px;
+    border-radius: 10px;
+    z-index: 100;
+    overflow: hidden;
+}
+
+/* fix functionality with javascript */
+.sticker form{
+    background-color: rgb(255, 255, 255);
+    padding: 1rem 0;
+    box-shadow: rgb(0 0 0 / 25%) 0px 2px 24px;
+    /* visibility: hidden; */
+    display: none;
+}
+
+.sticker form legend{
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: rgb(53, 63, 82);
+    padding: 0  0 1rem 2rem;
+}
+
+.selected{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(223, 227, 235);
+    padding:0 2rem;
+}
+
+.selected-coin{
+    display: flex;
+    align-items: center;
+}
+
+.selected-coin p{
+    padding: 0 1rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: rgb(53, 63, 82);
+}
+#coin-choices{
+    display: none;
+    width: 80%;
+    margin: auto;
+    box-shadow: rgb(0 0 0 / 20%) 0px 0.5rem 1.5rem;
+    padding: 0.2rem;
+    border-radius: 10px;
+}
+
+.choice{
+    display: flex;
+    align-items: center;
+    height: 2rem;
+    margin: 1rem 0;
+    padding: 0 1rem;
+}
+
+.choice img{
+    height: 2rem;
+}
+
+.choice p{
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.choice p:first-of-type{
+    padding: 0 5px;
+}
+
+.choice p:nth-of-type(2){
+    color: rgb(152, 161, 178);
+}
+
+.exchange-rate{
+    font-size: 4rem;
+    font-weight: 500;
+    padding-left: 2rem;
+}
+.exchange-rate p{
+    margin: 2rem 0;
+}
+
+.currency{
+    color: rgb(152, 161, 178);
+    margin-right: 0.25rem;
+    opacity: 1;
+}
+
+.exchange-rate__button{
+    padding-left: 2rem;
+    position: relative;
+}
+
+.exchange-rate__button button{
+    background-color: rgb(255, 255, 255);
+    color:rgb(12, 108, 242);
+    border-radius: 5px;
+    padding: 0.4rem 0.5rem;
+    font-weight: bold;
+    border: 1px solid rgb(223, 227, 235);
+}
+
+.exchange-rate__button div{
+    display: none;
+    position: absolute;
+    top: 2.5rem;
+    background-color: rgb(255, 255, 255);
+    width: 83%;
+    border-radius: rgb(0 0 0 / 20%) 0px 0.5rem 1.5rem;
+    box-shadow: 2px 2px 5px rgb(95, 92, 92);
+    padding: 0.5rem 0;
+}
+
+.exchange-rate__button p{
+    width: 90%;
+    margin: auto;
+    padding: 0.8rem 0.5rem;
+    font-weight: bold;
+    color: rgb(152, 161, 178);
+}
+
+.exchange-rate__button p:hover{
+    background: rgb(236, 245, 254);
+    cursor: pointer;
+}
+
+.exchange-rate__button span{
+    color: rgb(12, 108, 242 );
+    font-size: 0.9rem;
+}
+
+.coin-info{
+    padding: 0 2rem;
+}
+.coin-info label{
+    display: block;
+    color: rgb(53, 63, 82);
+    font-weight: bold;
+    font-size: 0.9rem;
+    padding: 1rem 0;
+}
+
+.coin-info input{
+    width: 100%;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid rgb(223, 227, 235);
+}
+
+.coin-info button{
+    width: 100%;
+    background-color: rgb(12, 108, 242 );
+    color: rgb(255, 255, 255);
+    border: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    padding: 0.8rem;
+    margin-top: 2rem;
+}
+
+/* toggle image and remove p tag on click */
+.spinner{
+    background-color: rgb(12, 108, 242);
+    width: auto;
+    display: flex;
+    height: 4rem;
+    float: right;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3rem;
+    margin: 1rem 0 0 auto;
+    padding: 0 0.2rem;
+    overflow: hidden;
+}
+
+.spinner img{
+    height: 3rem;
+    border-radius: 50%;
+} 
+
+.spinner > p{
+    width: 0;
+    visibility: hidden;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.spinner:hover > p{
+    width: 100%;
+    visibility: visible;
+}
+
+/* footer styling */
+
+footer{
+    margin: 9rem 7rem 5rem 7rem;
+}
+.footer-socials{
+    margin-top: 9rem;
+    
+}
+
+.social-media{
+    margin-top: 2rem;
+}
+
+.social-media a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5rem 0;
+    color:rgb(18, 29, 51);
+}
+
+.social-media a:hover{
+    color: rgb(20, 70, 153);
+}
+
+.social-media a svg{
+    margin-right: 1.5rem;
+}
+
+.social-media a span{
+    text-decoration: none; 
+    color: rgb(103, 113, 133);
+    font-weight: 500;
+}
+
+
+.footer-bottom{
+    margin-top:5rem;
+}
+
+.language-choice,
+.copyright{
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;  
+
+}
+
+.copyright span{
+    color: rgb(103, 113, 133);
+}
+
+
+.language-choice svg,
+.copyright svg{
+    margin-right: 1.5rem;
+}
+
+#language{
+    border: none;
+    padding: 0.5rem 0;
+    font-size: 1.1rem;
+    color:rgb(103, 113, 133);
+}
+
+.inc{
+    padding: 1rem 0;
+}
+
+.inc span{
+    color: rgb(12, 108, 242);
+    font-weight: 500;
+}
+
+.final{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
